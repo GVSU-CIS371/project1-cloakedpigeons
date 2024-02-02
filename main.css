@@ -15,8 +15,6 @@ header {
   justify-content: space-between; 
 }
 
-
-
 header>nav>ul {
   display:flex;
   flex-direction: row;
@@ -34,10 +32,8 @@ main {
   width:auto;
   width:100%;
   gap: 10px;
-  
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 img {
   
@@ -57,17 +53,29 @@ main>.store-item{
   background: white;
   display:grid;
   grid-template-rows: 1fr auto auto auto ;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr auto;
   
 }
 
 p {
-  
   grid-column-start:1;
   grid-column-end:4;
-  
+  margin: 10px;
 }
 
 span{
-  align-self: center;
+    margin: 10px;
 }
+
+footer{
+    justify-content: center;
+}
+
+footer p{
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+body{
+    background: orange;
